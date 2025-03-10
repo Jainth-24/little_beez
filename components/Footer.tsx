@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Twitter, Linkedin, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -51,8 +51,8 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 text-gray-700">
               <li>📍 123 Bee Street, Honeycomb City, HC 12345</li>
-              <li>📞 (555) 123-4567</li>
-              <li>📧 info@littlebeez.com</li>
+              <li>📞 +91 86673 05076</li>
+              <li>📧 littlebeezofficial@gmail.com</li>
             </ul>
           </div>
 
@@ -63,14 +63,29 @@ const Footer = () => {
             </h4>
             <div className="flex space-x-4">
               {[
-                { icon: Facebook, href: "#" },
-                { icon: Instagram, href: "#" },
-                { icon: Twitter, href: "#" },
-                { icon: Linkedin, href: "#" },
+                {
+                  icon: Facebook,
+                  href: "https://www.facebook.com/profile.php?id=61573715983311",
+                },
+                {
+                  icon: Instagram,
+                  href: "https://www.instagram.com/_little._.beez_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+                },
+                { icon: Twitter, href: "https://x.com/LittleBeezind" },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/company/littlebeez/",
+                },
+                {
+                  icon: Youtube, // Add the YouTube icon component here
+                  href: "https://www.youtube.com/@littlebeezofficial", // Replace with your YouTube link
+                },
               ].map(({ icon: Icon, href }, index) => (
                 <a
                   key={index}
                   href={href}
+                  target="_blank" // Open link in a new tab
+                  rel="noopener noreferrer" // Security best practice for external links
                   className="p-3 bg-white shadow-md rounded-full text-gray-700 hover:text-white hover:bg-amber-500 transition duration-300"
                 >
                   <Icon size={24} />

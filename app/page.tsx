@@ -19,15 +19,12 @@ export default function Home() {
               className="space-y-6"
             >
               <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-                Welcome to{" "}
-                <span className="text-amber-500 drop-shadow-md">
-                  Little Beez
-                </span>
+                Welcome to LittleBeez! 🐝
               </h1>
               <p className="text-lg md:text-xl text-gray-700">
-                Where learning meets fun and imagination takes flight. We
-                nurture young minds through creative play, discovery, and
-                personalized care.
+                Where kids learn,create, think, and grow through interactive,
+                screen-free workshops that boost cognitive skills, creativity,
+                problem-solving, and values while reducing screen time.
               </p>
               <div className="flex gap-4">
                 <Link

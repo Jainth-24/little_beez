@@ -30,7 +30,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <div className="min-h-screen flex flex-col">
             <Navbar />
-            <main className="flex-grow bg-gradient-to-br from-yellow-100 via-white to-yellow-50">
+            <main className="flex-grow bg-gradient-to-br from-yellow-100 via-white to-yellow-80">
               {children}
             </main>
             <Footer />

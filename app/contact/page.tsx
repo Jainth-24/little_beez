@@ -8,15 +8,14 @@ import { motion } from "framer-motion";
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
+    designation: "",
+    kidAge: "",
+    place: "",
     phone: "",
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-  };
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -37,11 +36,12 @@ export default function Contact() {
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-5xl font-extrabold text-amber-500 mb-6">
-                Get in Touch
+                Get in touch! 🐝✨
               </h1>
               <p className="text-lg text-gray-700 mb-6">
-                We’d love to hear from you! Feel free to reach out with any
-                questions, inquiries, or feedback.
+                Want to know more about Little Beez and our interactive,
+                screen-free workshops? Connect with us to enroll your child or
+                get more details. We're happy to help!
               </p>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
@@ -52,11 +52,11 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center space-x-4">
                   <Phone size={24} className="text-amber-600" />
-                  <p className="text-gray-700">(555) 123-4567</p>
+                  <p className="text-gray-700">+91 86673 05076</p>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Mail size={24} className="text-amber-600" />
-                  <p className="text-gray-700">info@littlebeez.com</p>
+                  <p className="text-gray-700">littlebeezofficial@gmail.com</p>
                 </div>
               </div>
             </motion.div>
@@ -68,7 +68,18 @@ export default function Contact() {
               transition={{ duration: 0.5 }}
               className="bg-white p-8 rounded-xl shadow-lg border border-yellow-200 backdrop-blur-md"
             >
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                action={`https://formsubmit.co/${process.env.NEXT_CLIENT_EMAIL}`}
+                method="POST"
+                className="space-y-6"
+              >
+                <input
+                  type="hidden"
+                  name="_next"
+                  value={process.env.NEXT_PUBLIC_DOMAIN}
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                {/* Name Field */}
                 <div>
                   <label
                     htmlFor="name"
@@ -87,30 +98,70 @@ export default function Contact() {
                   />
                 </div>
 
+                {/* Designation Field */}
                 <div>
                   <label
-                    htmlFor="email"
+                    htmlFor="designation"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Email
+                    Designation (Parent, Guardian, etc.)
                   </label>
                   <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
+                    type="text"
+                    id="designation"
+                    name="designation"
+                    value={formData.designation}
                     onChange={handleChange}
                     className="w-full px-4 py-3 mt-1 border border-gray-300 rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500"
                     required
                   />
                 </div>
 
+                {/* Age of Your Kid Field */}
+                <div>
+                  <label
+                    htmlFor="kidAge"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Age of Your Kid
+                  </label>
+                  <input
+                    type="number"
+                    id="kidAge"
+                    name="kidAge"
+                    value={formData.kidAge}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 mt-1 border border-gray-300 rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500"
+                    required
+                  />
+                </div>
+
+                {/* Place Field */}
+                <div>
+                  <label
+                    htmlFor="place"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Place
+                  </label>
+                  <input
+                    type="text"
+                    id="place"
+                    name="place"
+                    value={formData.place}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 mt-1 border border-gray-300 rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500"
+                    required
+                  />
+                </div>
+
+                {/* Phone Number Field */}
                 <div>
                   <label
                     htmlFor="phone"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Phone
+                    Phone Number
                   </label>
                   <input
                     type="tel"
@@ -119,15 +170,17 @@ export default function Contact() {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 mt-1 border border-gray-300 rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500"
+                    required
                   />
                 </div>
 
+                {/* Message Field */}
                 <div>
                   <label
                     htmlFor="message"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Message
+                    Any Message, Query, or Feedback?
                   </label>
                   <textarea
                     id="message"
@@ -140,6 +193,7 @@ export default function Contact() {
                   />
                 </div>
 
+                {/* Submit Button */}
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

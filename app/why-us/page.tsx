@@ -6,34 +6,44 @@ import { Check } from "lucide-react";
 export default function WhyUs() {
   const benefits = [
     {
-      title: "Experienced Educators",
+      title: "Personalized Attention",
       description:
-        "Our team consists of certified teachers with years of experience in early childhood education.",
+        "With one mentor for every five kids, each child gets individual care and support.",
     },
     {
-      title: "Safe Environment",
+      title: "Hands-On Learning",
       description:
-        "State-of-the-art security systems and strict safety protocols to ensure your child's wellbeing.",
+        "Interactive workshops encourage practical exploration rather than passive screen time.",
     },
     {
-      title: "Innovative Curriculum",
+      title: "Confidence & Growth",
       description:
-        "A perfect blend of traditional and modern teaching methods to provide comprehensive learning.",
+        "Kids build self-confidence by solving problems, experimenting, and thinking independently.",
     },
     {
-      title: "Small Class Sizes",
+      title: "Peer Connection",
       description:
-        "Maintaining low student-to-teacher ratios for personalized attention and better learning outcomes.",
+        "Children share ideas, collaborate, and grow together, fostering teamwork and communication skills.",
     },
     {
-      title: "Creative Learning",
+      title: "Kid-Friendly Mentors",
       description:
-        "Engaging activities that foster creativity, critical thinking, and problem-solving skills.",
+        "Our young, enthusiastic mentors create a fun and relatable environment, making learning enjoyable.",
     },
     {
-      title: "Parent Partnership",
+      title: "Beyond the Workshop",
       description:
-        "Regular updates and open communication to keep you involved in your child's development.",
+        "Kids apply what they learn at home, naturally reducing screen time and enhancing their daily learning.",
+    },
+    {
+      title: "Exciting Takeaways",
+      description:
+        "Every session leaves children with new skills, creative projects, and a sense of accomplishment.",
+    },
+    {
+      title: "Weekend-Friendly Sessions",
+      description:
+        "Our workshops are mostly conducted on weekends, making it easy for kids to attend without disrupting their school routine.",
     },
   ];
 
@@ -57,7 +67,7 @@ export default function WhyUs() {
               key={index}
               className="relative bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300"
             >
-              <div className="flex items-center mb-4">
+              <div className="flex items-center mb-2">
                 <div className="bg-amber-100 p-3 rounded-full shadow-md">
                   <Check className="h-6 w-6 text-amber-600" />
                 </div>
