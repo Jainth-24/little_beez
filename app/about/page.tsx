@@ -24,10 +24,9 @@ export default function About() {
   const founders = [
     {
       name: "Sarah Johnson",
-      role: "Founder & Director",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887",
-      bio: "15+ years in early childhood education",
+      role: "Co-founder of Little Beez | Child Enthusiast",
+      image: "/Founder1.jpeg",
+      bio: "Today's kids are tomorrow's Nation! I strive to shape young minds through healthy, creative, and meaningful hands-on workshop based screen-free learning.",
     },
     {
       name: "Michael Chen",
@@ -253,10 +252,10 @@ const missionPoints = [
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all overflow-hidden"
+                className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all overflow-hidden border border-yellow-500"
               >
-                <div className="flex flex-col items-center p-6 text-center">
-                  <div className="relative w-40 h-40 rounded-full overflow-hidden shadow-md">
+                <div className="flex flex-col items-center p-8 text-center">
+                  <div className="relative w-40 h-48 rounded-sm overflow-hidden shadow-md">
                     <Image
                       src={founder.image}
                       alt={founder.name}

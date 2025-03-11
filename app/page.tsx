@@ -4,8 +4,25 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-fade";
 
 export default function Home() {
+  const images = [
+    "/littlebeez.png",
+    "/littlebeez1.jpg",
+    "/littlebeez2.jpg",
+    "/littlebeez3.jpg",
+    "/littlebeez4.jpg",
+    "/littlebeez5.jpg",
+    "/littlebeez6.jpg",
+    "/littlebeez7.jpg",
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-yellow-50 to-white">
       <section className="pt-32 pb-16 px-6 sm:px-12 lg:px-20">
@@ -22,9 +39,10 @@ export default function Home() {
                 Welcome to LittleBeez! 🐝
               </h1>
               <p className="text-lg md:text-xl text-gray-700">
-                Where kids learn,create, think, and grow through interactive,
-                screen-free workshops that boost cognitive skills, creativity,
-                problem-solving, and values while reducing screen time.
+                Where kids learn, create, think, and grow through interactive,
+                screen-free <b>workshops</b> that boost cognitive skills,
+                creativity, problem-solving, and values while reducing screen
+                time.
               </p>
               <div className="flex gap-4">
                 <Link
@@ -42,20 +60,35 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Right Image */}
+            {/* Right Image Carousel */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-lg"
             >
-              <Image
-                src="/littlebeez.png"
-                alt="Happy children playing"
-                fill
-                className="object-cover rounded-2xl"
-                priority
-              />
+              <Swiper
+                modules={[Autoplay, EffectFade]}
+                effect="fade"
+                autoplay={{
+                  delay: 3000, // Change image every 3 seconds
+                  disableOnInteraction: false,
+                }}
+                loop={true}
+                className="w-full h-full"
+              >
+                {images.map((src, index) => (
+                  <SwiperSlide key={index}>
+                    <Image
+                      src={src}
+                      alt={`Carousel Image ${index + 1}`}
+                      fill
+                      className="object-cover rounded-2xl"
+                      priority
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </motion.div>
           </div>
         </div>

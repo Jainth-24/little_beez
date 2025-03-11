@@ -15,10 +15,10 @@ export default function Contact() {
     message: "",
   });
 
-
-
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -47,7 +47,7 @@ export default function Contact() {
                 <div className="flex items-center space-x-4">
                   <MapPin size={24} className="text-amber-600" />
                   <p className="text-gray-700">
-                    123 Bee Street, Honeycomb City, HC 12345
+                    Kallapuram, Coimbatore, TamilNadu
                   </p>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -79,7 +79,6 @@ export default function Contact() {
                   value={process.env.NEXT_PUBLIC_DOMAIN}
                 />
                 <input type="hidden" name="_captcha" value="false" />
-                {/* Name Field */}
                 <div>
                   <label
                     htmlFor="name"
@@ -98,7 +97,6 @@ export default function Contact() {
                   />
                 </div>
 
-                {/* Designation Field */}
                 <div>
                   <label
                     htmlFor="designation"
@@ -117,7 +115,6 @@ export default function Contact() {
                   />
                 </div>
 
-                {/* Age of Your Kid Field */}
                 <div>
                   <label
                     htmlFor="kidAge"
@@ -125,15 +122,23 @@ export default function Contact() {
                   >
                     Age of Your Kid
                   </label>
-                  <input
-                    type="number"
+                  <select
                     id="kidAge"
                     name="kidAge"
                     value={formData.kidAge}
                     onChange={handleChange}
                     className="w-full px-4 py-3 mt-1 border border-gray-300 rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500"
                     required
-                  />
+                  >
+                    <option value="" disabled>
+                      Select age
+                    </option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
                 </div>
 
                 {/* Place Field */}

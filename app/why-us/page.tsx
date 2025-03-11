@@ -45,6 +45,11 @@ export default function WhyUs() {
       description:
         "Our workshops are mostly conducted on weekends, making it easy for kids to attend without disrupting their school routine.",
     },
+    {
+      title: "Safe & Engaging Environment",
+      description:
+        "We prioritize safety and create a nurturing space where kids can explore, learn, and have fun without pressure.",
+    },
   ];
 
   return (
