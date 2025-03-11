@@ -208,6 +208,10 @@ export default function Contact() {
                   Send Message
                   <Send className="ml-2" size={20} />
                 </motion.button>
+                <p className="mt-4 text-sm text-gray-400 text-center">
+                  Note: Our workshops are conducted in Coimbatore city. The
+                  exact venue details will be shared once you join us!
+                </p>
               </form>
             </motion.div>
           </div>
