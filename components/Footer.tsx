@@ -50,7 +50,7 @@ const Footer = () => {
               Contact Info
             </h4>
             <ul className="space-y-2 text-gray-700">
-              <li>📍 Kallapuram, Coimbatore, TamilNadu</li>
+              <li>📍 Coimbatore, TamilNadu</li>
               <li>📞 +91 86673 05076</li>
               <li>📧 littlebeezofficial@gmail.com</li>
             </ul>

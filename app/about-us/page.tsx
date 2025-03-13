@@ -23,7 +23,7 @@ import {
 export default function About() {
   const founders = [
     {
-      name: "Sarah Johnson",
+      name: "Shree Mithra K C",
       role: "Co-founder of Little Beez | Child Enthusiast",
       image: "/Founder1.jpeg",
       bio: "Today's kids are tomorrow's Nation! I strive to shape young minds through healthy, creative, and meaningful hands-on workshop based screen-free learning.",

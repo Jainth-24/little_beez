@@ -13,14 +13,18 @@ import "swiper/css/effect-fade";
 
 export default function Home() {
   const images = [
-    "/littlebeez.png",
-    "/littlebeez1.jpg",
-    "/littlebeez2.jpg",
-    "/littlebeez3.jpg",
-    "/littlebeez4.jpg",
-    "/littlebeez5.jpg",
-    "/littlebeez6.jpg",
-    "/littlebeez7.jpg",
+    "/1.jpg",
+    "/2.jpg",
+    "/3.jpg",
+    "/4.jpg",
+    "/5.jpg",
+    "/6.jpg",
+    "/7.jpg",
+    "/8.jpg",
+    "/9.jpg",
+    "/10.jpg",
+    "/11.jpg",
+    "/12.jpg",
   ];
 
   return (
@@ -43,6 +47,9 @@ export default function Home() {
                 screen-free <b>workshops</b> that boost cognitive skills,
                 creativity, problem-solving, and values while reducing screen
                 time.
+              </p>
+              <p className="text-lg md:text-xl text-amber-600 font-semibold">
+                Exclusive workshops for kids aged 5-9 yrs
               </p>
               <div className="flex gap-4">
                 <Link
