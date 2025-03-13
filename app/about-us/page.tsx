@@ -245,14 +245,14 @@ const missionPoints = [
           <h2 className="text-5xl font-extrabold text-gray-900 text-center">
             Meet Our Founders
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="flex justify-center items-center gap-8">
             {founders.map((founder, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all overflow-hidden border border-yellow-500"
+                className="bg-white w-[500px] rounded-3xl shadow-lg hover:shadow-2xl transition-all overflow-hidden border border-yellow-500"
               >
                 <div className="flex flex-col items-center p-8 text-center">
                   <div className="relative w-40 h-48 rounded-sm overflow-hidden shadow-md">

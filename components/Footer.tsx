@@ -34,7 +34,11 @@ const Footer = () => {
               {["Home", "About Us", "Why Us", "Contact"].map((link, index) => (
                 <li key={index}>
                   <Link
-                    href={`/${link.toLowerCase().replace(/\s/g, "-")}`}
+                    href={
+                      link === "Home"
+                        ? "/"
+                        : `/${link.toLowerCase().replace(/\s/g, "-")}`
+                    }
                     className="text-gray-700 hover:text-amber-600 transition duration-300"
                   >
                     {link}
