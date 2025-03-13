@@ -28,13 +28,13 @@ export default function About() {
       image: "/Founder1.jpeg",
       bio: "Today's kids are tomorrow's Nation! I strive to shape young minds through healthy, creative, and meaningful hands-on workshop based screen-free learning.",
     },
-    {
-      name: "Michael Chen",
-      role: "Co-Founder & Educational Director",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1770",
-      bio: "Child psychology expert with PhD in Education",
-    },
+    // {
+    //   name: "Michael Chen",
+    //   role: "Co-Founder & Educational Director",
+    //   image:
+    //     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1770",
+    //   bio: "Child psychology expert with PhD in Education",
+    // },
   ];
 
   const whatWeDo = [
