@@ -59,7 +59,7 @@ export default function Home() {
                   Get Started <ArrowRight className="ml-2" size={20} />
                 </Link>
                 <Link
-                  href="/about"
+                  href="/about-us"
                   className="inline-flex items-center px-6 py-3 border-2 border-amber-500 text-amber-500 font-semibold rounded-lg hover:bg-amber-100 transition-all duration-300"
                 >
                   Learn More
