@@ -18,15 +18,17 @@ export default function About() {
   const founders = [
     {
       name: "Shree Mithra K C",
-      role: "Founder of Little Beez | Child Enthusiast",
+      role: "Founder of LittleBeez | Child Enthusiast",
       image: "/Founder1.jpeg",
-      bio: "Today's kids are tomorrow's Nation! at next line: I strive to shape the future of young minds through creative, hands-on workshops and screen-free learning experiences.",
+      subtext: "Today's kids are tomorrow's Nation! ",
+      bio: `I strive to shape the future of young minds through creative, hands-on workshops and screen-free learning experiences.`,
     },
     {
       name: "Raghul M",
-      role: "Founder of Little Beez | Child Enthusiast",
+      role: "Founder of LittleBeez | Child Enthusiast",
       image: "/Founder2.jpeg",
-      bio: `"Bright minds build a brighter future!" next line: I endeavor to nurture young minds through interactive, hands-on workshops that encourage screen-free learning.`,
+      subtext: "Bright minds build a brighter future! ",
+      bio: `I endeavor to nurture young minds through interactive, hands-on workshops that encourage screen-free learning.`,
     },
   ];
 
@@ -259,7 +261,8 @@ export default function About() {
                     {founder.name}
                   </h3>
                   <p className="text-amber-600">{founder.role}</p>
-                  <p className="text-gray-600 mt-2">{founder.bio}</p>
+                  <p className="mt-1 font-semibold">{founder.subtext}</p>
+                  <p className="text-gray-600">{founder.bio}</p>
                 </div>
               </motion.div>
             ))}
