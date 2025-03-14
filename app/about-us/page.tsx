@@ -12,29 +12,22 @@ import {
   Smile,
   MonitorOff,
 } from "lucide-react";
-import {
-  Palette,
-  Heart,
-  Apple,
-  Sprout,
-  Star,
-} from "lucide-react";
+import { Palette, Heart, Apple, Sprout, Star } from "lucide-react";
 
 export default function About() {
   const founders = [
     {
       name: "Shree Mithra K C",
-      role: "Co-founder of Little Beez | Child Enthusiast",
+      role: "Founder of Little Beez | Child Enthusiast",
       image: "/Founder1.jpeg",
-      bio: "Today's kids are tomorrow's Nation! I strive to shape young minds through healthy, creative, and meaningful hands-on workshop based screen-free learning.",
+      bio: "Today's kids are tomorrow's Nation! at next line: I strive to shape the future of young minds through creative, hands-on workshops and screen-free learning experiences.",
     },
-    // {
-    //   name: "Michael Chen",
-    //   role: "Co-Founder & Educational Director",
-    //   image:
-    //     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1770",
-    //   bio: "Child psychology expert with PhD in Education",
-    // },
+    {
+      name: "Michael Chen",
+      role: "Founder of Little Beez | Child Enthusiast",
+      image: "/Founder2.jpeg",
+      bio: `"Bright minds build a brighter future!" next line: I endeavor to nurture young minds through interactive, hands-on workshops that encourage screen-free learning.`,
+    },
   ];
 
   const whatWeDo = [
@@ -70,77 +63,76 @@ export default function About() {
     },
   ];
 
+  const visionPoints = [
+    {
+      icon: <Smile className="w-10 h-10 text-amber-500" />,
+      title: "Confidence",
+      description:
+        "Helping children develop self-assurance and belief in their abilities.",
+    },
+    {
+      icon: <Palette className="w-10 h-10 text-amber-500" />,
+      title: "Creativity",
+      description:
+        "Encouraging imagination and innovative thinking through hands-on activities.",
+    },
+    {
+      icon: <Heart className="w-10 h-10 text-amber-500" />,
+      title: "Compassion",
+      description: "Instilling empathy, kindness, and emotional intelligence.",
+    },
+    {
+      icon: <Leaf className="w-10 h-10 text-amber-500" />,
+      title: "Responsibility",
+      description:
+        "Teaching sustainable practices and mindful decision-making.",
+    },
+    {
+      icon: <Apple className="w-10 h-10 text-amber-500" />,
+      title: "Healthy Living",
+      description:
+        "Promoting well-being through balanced habits and active learning.",
+    },
+    {
+      icon: <Smartphone className="w-10 h-10 text-amber-500" />,
+      title: "Screen-Free",
+      description:
+        "Creating a fun, interactive environment that nurtures real-world skills.",
+    },
+  ];
 
-
-const visionPoints = [
-  {
-    icon: <Smile className="w-10 h-10 text-amber-500" />,
-    title: "Confidence",
-    description:
-      "Helping children develop self-assurance and belief in their abilities.",
-  },
-  {
-    icon: <Palette className="w-10 h-10 text-amber-500" />,
-    title: "Creativity",
-    description:
-      "Encouraging imagination and innovative thinking through hands-on activities.",
-  },
-  {
-    icon: <Heart className="w-10 h-10 text-amber-500" />,
-    title: "Compassion",
-    description: "Instilling empathy, kindness, and emotional intelligence.",
-  },
-  {
-    icon: <Leaf className="w-10 h-10 text-amber-500" />,
-    title: "Responsibility",
-    description: "Teaching sustainable practices and mindful decision-making.",
-  },
-  {
-    icon: <Apple className="w-10 h-10 text-amber-500" />,
-    title: "Healthy Living",
-    description:
-      "Promoting well-being through balanced habits and active learning.",
-  },
-  {
-    icon: <Smartphone className="w-10 h-10 text-amber-500" />,
-    title: "Screen-Free",
-    description:
-      "Creating a fun, interactive environment that nurtures real-world skills.",
-  },
-];
-
-const missionPoints = [
-  {
-    icon: <Sparkles className="w-10 h-10 text-amber-500" />,
-    title: "Unleash Creativity",
-    description: "Through hands-on activities and innovative thinking.",
-  },
-  {
-    icon: <Brain className="w-10 h-10 text-amber-500" />,
-    title: "Develop Skills",
-    description: "Enhancing thinking, cognitive, and spatial skills.",
-  },
-  {
-    icon: <Handshake className="w-10 h-10 text-amber-500" />,
-    title: "Build Confidence",
-    description: "Fostering teamwork in a screen-free environment.",
-  },
-  {
-    icon: <Heart className="w-10 h-10 text-amber-500" />,
-    title: "Learn Values",
-    description: "Teaching sharing, caring, and social values.",
-  },
-  {
-    icon: <Sprout className="w-10 h-10 text-amber-500" />,
-    title: "Eco-Friendly Lifestyle",
-    description: "Embracing sustainability and mindful living.",
-  },
-  {
-    icon: <Star className="w-10 h-10 text-amber-500" />,
-    title: "Celebrate Individuality",
-    description: "Promoting equality and self-expression.",
-  },
-];
+  const missionPoints = [
+    {
+      icon: <Sparkles className="w-10 h-10 text-amber-500" />,
+      title: "Unleash Creativity",
+      description: "Through hands-on activities and innovative thinking.",
+    },
+    {
+      icon: <Brain className="w-10 h-10 text-amber-500" />,
+      title: "Develop Skills",
+      description: "Enhancing thinking, cognitive, and spatial skills.",
+    },
+    {
+      icon: <Handshake className="w-10 h-10 text-amber-500" />,
+      title: "Build Confidence",
+      description: "Fostering teamwork in a screen-free environment.",
+    },
+    {
+      icon: <Heart className="w-10 h-10 text-amber-500" />,
+      title: "Learn Values",
+      description: "Teaching sharing, caring, and social values.",
+    },
+    {
+      icon: <Sprout className="w-10 h-10 text-amber-500" />,
+      title: "Eco-Friendly Lifestyle",
+      description: "Embracing sustainability and mindful living.",
+    },
+    {
+      icon: <Star className="w-10 h-10 text-amber-500" />,
+      title: "Celebrate Individuality",
+      description: "Promoting equality and self-expression.",
+    },
+  ];
 
   return (
     <div className="p-10 bg-gradient-to-r from-amber-50 to-yellow-50">

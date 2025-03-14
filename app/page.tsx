@@ -13,6 +13,7 @@ import "swiper/css/effect-fade";
 
 export default function Home() {
   const images = [
+    "/littlebeez.png",
     "/1.jpg",
     "/2.jpg",
     "/3.jpg",
