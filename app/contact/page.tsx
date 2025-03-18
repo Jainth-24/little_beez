@@ -39,7 +39,7 @@ export default function Contact() {
                 Get in touch! 🐝✨
               </h1>
               <p className="text-lg text-gray-700 mb-6">
-                Want to know more about Little Beez and our interactive,
+                Want to know more about LittleBeez and our interactive,
                 screen-free workshops? Connect with us to enroll your child or
                 get more details. We're happy to help!
               </p>
@@ -136,6 +136,9 @@ export default function Contact() {
                     <option value="7">7</option>
                     <option value="8">8</option>
                     <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
                   </select>
                 </div>
 

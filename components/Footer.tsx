@@ -14,11 +14,11 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <Image
                 src="/littlebeez.png"
-                alt="Little Beez Logo"
+                alt="LittleBeez Logo"
                 width={80}
                 height={80}
               />
-              <h3 className="text-2xl font-bold text-amber-500">Little Beez</h3>
+              <h3 className="text-2xl font-bold text-amber-500">LittleBeez</h3>
             </div>
             <p className="text-gray-700 text-lg leading-relaxed">
               Nurturing young minds, building bright futures.
@@ -103,7 +103,7 @@ const Footer = () => {
         <div className="mt-12 pt-6 border-t border-gray-300">
           <p className="text-center text-gray-700 text-sm">
             © {new Date().getFullYear()}{" "}
-            <span className="font-semibold text-amber-500">Little Beez</span>.
+            <span className="font-semibold text-amber-500">LittleBeez</span>.
             All rights reserved.
           </p>
         </div>

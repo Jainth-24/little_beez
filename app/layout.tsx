@@ -7,15 +7,15 @@ import { ThemeProvider } from "next-themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Little Beez - Early Childhood Learning",
+  title: "LittleBeez - Early Childhood Learning",
   description: "A nurturing environment for children to learn and grow.",
   icons: {
-    icon: "/favicon.ico", 
+    icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Little Beez - Early Childhood Learning",
+    title: "LittleBeez - Early Childhood Learning",
     description: "A nurturing environment for children to learn and grow.",
-    images: "/favicon.ico", 
+    images: "/favicon.ico",
   },
 };
 

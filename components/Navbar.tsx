@@ -37,11 +37,11 @@ const Navbar = () => {
           <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/littlebeez.png"
-              alt="Little Beez Logo"
+              alt="LittleBeez Logo"
               width={50}
               height={50}
             />
-            <h1 className="text-2xl font-bold text-amber-500">Little Beez</h1>
+            <h1 className="text-2xl font-bold text-amber-500">LittleBeez</h1>
           </Link>
 
           {/* Desktop Navigation */}

@@ -13,7 +13,7 @@ import "swiper/css/effect-fade";
 
 export default function Home() {
   const images = [
-    "/littlebeez.png",
+    "/littlebeez_svg.svg",
     "/1.jpg",
     "/2.jpg",
     "/3.jpg",
@@ -79,14 +79,14 @@ export default function Home() {
                 modules={[Autoplay, EffectFade]}
                 effect="fade"
                 autoplay={{
-                  delay: 3000, // Change image every 3 seconds
+                  delay: 3000,
                   disableOnInteraction: false,
                 }}
                 loop={true}
                 className="w-full h-full"
               >
                 {images.map((src, index) => (
-                  <SwiperSlide key={index}>
+                  <SwiperSlide key={index} className="swiper-slide">
                     <Image
                       src={src}
                       alt={`Carousel Image ${index + 1}`}
@@ -101,6 +101,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Add custom CSS for Swiper */}
+      <style jsx global>{`
+        .swiper-slide {
+          z-index: 1;
+        }
+        .swiper-slide-active {
+          z-index: 2;
+        }
+      `}</style>
     </div>
   );
 }
