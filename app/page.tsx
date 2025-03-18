@@ -50,7 +50,7 @@ export default function Home() {
                 time.
               </p>
               <p className="text-lg md:text-xl text-amber-600 font-semibold">
-                Exclusive workshops for kids aged 5-9 yrs
+                Exclusive workshops for kids aged 5-12 yrs
               </p>
               <div className="flex gap-4">
                 <Link
